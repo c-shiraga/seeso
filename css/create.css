@@ -1,0 +1,16 @@
+.form-area{
+    border: 1px gray solid;
+}
+.create{
+    text-align: center;
+}
+textarea{
+    margin-left: 50px;
+}
+label{
+    margin-right: 300px;
+}
+div{
+    margin-bottom: 20px;
+}
+
