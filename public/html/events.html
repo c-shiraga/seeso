@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEESO-Events</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/events.css">
+    
+</head>
+<body>
+    <header>
+        <h1><a href="events.html" class="title-logo">SEESO</a></h1>
+        <button id="sign-out" onclick="onSignOutButtonClicked();">sign out</button>
+        <nav class="hd">
+            <ul class="hd">
+                <li class="current"><a href="./events.html">Events</a></li>
+                <li><a href="./create.html">Create</a></li>
+                <li><a href="./community.html">Community</a></li>
+                <li><a href="./my-page.html">MyPage</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="event">
+            <p>No.3</p>
+            <div class="date">
+                <p>日時: 2021/04/10</p>
+                <p>会場: <span class="online">オンライン</span></p>
+            </div>
+            <h2>スマブラ大会</h2>
+            <div>
+                <p>作成者</p>
+                <p>参加: 5人</p>
+            </div>
+        </div>
+        <div class="event">
+            <p>No.2</p>
+            <div class="date">
+                <p>日時: 2021/04/10</p>
+                <p>会場: <span class="offline">オフライン</span></p>
+            </div>
+            <h2>バーベキュー</h2>
+            <div>
+                <p>作成者</p>
+                <p>参加: 10人</p>
+            </div>
+        </div>
+        <div class="event">
+            <p>No.1</p>
+            <div class="date">
+                <p>日時: 2021/04/10</p>
+                <p>会場: <span class="online">オンライン</span></p>
+            </div>
+            <h2>麻雀大会</h2>
+            <div>
+                <p>作成者</p>
+                <p>参加: 4人</p>
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+        <nav class="ft">
+            <ul class="ft">
+                <li class="ft"><a href="">Events</a></li>
+                <li class="ft"><a href="">Create</a></li>
+                <li class="ft"><a href="">Community</a></li>
+                <li class="ft"><a href="">MyPage</a></li> 
+            </ul>
+        </nav>
+        <div class="copy">&copy;2021 seeso</div>
+    </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+
+    <script src="../config/config.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+    <script src="../js/common.js"></script>
+    
+</body>
+</html>

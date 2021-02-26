@@ -7,10 +7,17 @@ header{
 header h1{
     left: 10px;
 }
+.title-logo{
+    text-decoration: none;
+    color: black;
+}
+.title-area{
+    width: 200px;
+}
 
 section{
     margin: 0 100px;
-    max-width: 1300px;
+    max-width: 1000px;
     margin: auto;
 }
 body.index{
@@ -26,15 +33,18 @@ body.index{
 .main h1{
     margin-top: 250px;
 }
-button{
-    margin-top: 20px;
-    font-size: 16pt;
-    padding: 10px 20px;
-    background-color: #3CB5E0;
-    border-radius: 5px;
-    border: none;
+button#sign-out{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    background-color:  #3CB5E0;
     color: white;
+    padding: 5px;
+    border-radius: 5px;
 }
+
+
+
 /*****************ヘッダーメニュー**********************/
 
 nav.hd ul{
@@ -71,7 +81,6 @@ footer{
     background-color: #202020;
     padding-top: 20px;
     margin-top: 50px;
-
 }
 nav.ft li{
     list-style: none;

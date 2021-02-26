@@ -1,0 +1,33 @@
+div.event{
+    border: 1px #BFC5CA solid;
+    max-width: 800px;
+    margin:  5px auto;
+    position: relative;
+    border-radius: 5px;
+}
+div.event:hover{
+    background: rgb(247, 250, 252);
+    box-shadow: 1px 1px 1px #3CB5E0;
+    bottom:6px;
+    right: 6px;
+
+}
+.date{
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    margin: 10px 0;
+}
+p{
+    margin: 5px;
+}
+.online{
+    background-color: skyblue;
+    padding: 2px;
+}
+.offline{
+    background-color: blue;
+    color: white;
+    padding: 2px;
+}

@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEESO-Edit</title>
+    <title>SEESO-Create</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/create.css">
 </head>
 <body>
     <header>
-        <h1>SESSO</h1>
+        <h1><a href="events.html" class="title-logo">SEESO</a></h1>
+        <button id="sign-out" onclick="onSignOutButtonClicked();">sign out</button>
         <nav class="hd">
             <ul class="hd">
-                <li><a href="">Events</a></li>
-                <li class="current"><a href="">Create</a></li>
-                <li><a href="">Community</a></li>
-                <li><a href="">MyPage</a></li>
+                <li><a href="./events.html">Events</a></li>
+                <li class="current"><a href="./create.html">Create</a></li>
+                <li><a href="./community.html">Community</a></li>
+                <li><a href="./my-page.html">MyPage</a></li>
             </ul>
         </nav>
     </header>
@@ -58,7 +59,19 @@
                 <li class="ft"><a href="">MyPage</a></li> 
             </ul>
         </nav>
-        <div class="copy">&copy;2020 seeso</div>
+        <div class="copy">&copy;2021 seeso</div>
     </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+
+    <script src="../config/config.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+    <script src="../js/common.js"></script>
 </body>
 </html>
