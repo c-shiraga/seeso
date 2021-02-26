@@ -113,7 +113,7 @@
             // 追加するHTMLを作成
             let chatDiv  = document.createElement('div');
             let chatDataDiv  = document.createElement('div');
-            let chatMsgDiv  = document.createElement('div');
+            let chatMsgBox  = document.createElement('div');
             let chatName  = document.createElement('span');
             let chatMsg  = document.createElement('span');
             let chatTime  = document.createElement('span');
@@ -125,6 +125,7 @@
             chatDiv.className = "message";
             chatName.className = "chat-name";
             chatMsg.className = "chat-msg";
+            chatMsgBox.className = "chat-msg-box";
             chatTime.className = "chat-time";
             chatName.textContent = `${data.name}`;
             chatMsg.textContent = `${data.msg}`
@@ -133,7 +134,8 @@
             chatDiv.appendChild(chatImg);
             chatDataDiv.appendChild(chatName);
             chatDataDiv.appendChild(br);
-            chatDataDiv.appendChild(chatMsg);
+            chatMsgBox.appendChild(chatMsg);
+            chatDataDiv.appendChild(chatMsgBox);
             chatDataDiv.appendChild(chatTime);
             chatDiv.appendChild(chatDataDiv);
 

@@ -64,15 +64,19 @@ div.message{
 .chat-name{
     font-size: 10pt;
 }
-.chat-msg{
+.chat-msg-box{
     background-color: #eee;
-    padding: 8px 20px 8px 0px;
+    padding: 8px 10px 8px 10px;
     border-radius: 0 20px 20px 20px;
+    display: inline-block;
+    max-width: 800px;
+}
+.chat-msg{
     white-space: pre-wrap;
-    
 }
 .chat-time{
     font-size: 8pt;
     color: #bbb;
+    margin-left: 5px;
 }
     
