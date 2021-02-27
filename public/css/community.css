@@ -1,9 +1,9 @@
 #messages-area{
     width: 1000px;
-    border: #ccc 1px solid;
     overflow-y: scroll;
-    height: 500px;
+    height: 550px;
     padding-bottom: 20px;
+    background-color: white;
     border-radius: 10px;
 }
 

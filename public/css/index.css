@@ -1,24 +1,32 @@
 header{
     height: 100px;
-    margin: 0 10px;
-    border-bottom: #BFC5CA solid 2px;
     margin-bottom: 50px;
+    background: #9CECFB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 header h1{
     left: 10px;
 }
 .title-logo{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .title-area{
     width: 200px;
+}
+body{
+    background-color: #EDF2FA;
 }
 
 section{
     margin: 0 100px;
     max-width: 1000px;
     margin: auto;
+    
+    
 }
 body.index{
     text-align: center;
@@ -37,10 +45,8 @@ button#sign-out{
     position: absolute;
     right: 30px;
     top: 10px;
-    background-color:  #3CB5E0;
     color: white;
-    padding: 5px;
-    border-radius: 5px;
+    
 }
 
 
@@ -65,20 +71,23 @@ nav.hd a{
     display: block;
     width: 100%;
     text-decoration: none;
-    color: #555;
+    color: white;
     padding-bottom: 5px;
 }
 nav.hd li.current{
-    border-bottom: 3px solid #3CB5E0;
-}
-nav.hd li:hover{
     border-bottom: 3px solid #F0E475;
 }
+
+
+
 
 /*****************フッターメニュー**********************/
 footer{
     color: white;
-    background-color: #202020;
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     padding-top: 20px;
     margin-top: 50px;
 }
@@ -90,7 +99,7 @@ nav.ft li{
     padding: 10px 0px;
     margin-top: 20px;
     text-align: center;
-    background-color: black;
+    
 }
 nav.ft a{
     text-decoration: none;
