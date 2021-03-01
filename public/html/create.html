@@ -10,6 +10,28 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script>
+        function check(){
+    var flag;
+    if(document.form1.field1.value==""){ //「日時」の入力をチェック
+        flag = 1;
+    }else if(document.form1.field2.value==""){　//「タイトル」の入力をチェック
+        flag = 1;
+    }else if(document.form1.venue.value==""){　//「会場」の入力をチェック
+        flag = 1;
+    }else if(document.form1.content.value == ""){　//「内容」の入力をチェック
+        flag = 1;
+    }
+
+    if(flag){
+        window.alert("未入力の項目がありました") //入力漏れがあれば警告を表示
+        return false; //送信を中止
+    }else{
+        return true; //送信を実行
+    }
+    
+}
+    </script>
     <header>
         <h1><a href="events.html" class="title-logo">SEESO</a></h1>
         <button id="sign-out" onclick="onSignOutButtonClicked();">sign out</button>
@@ -23,18 +45,18 @@
         </nav>
     </header>
     <section class="create">
-        <form action="">
+        <form action="" method="POST" name="form1" onsubmit="return check()">
             <div>
                 <div>
                     <label for="">日時</label>
                 </div>
-                <input type="date" class="form-area">
+                <input type="date" class="form-area" name="field1">
             </div>
             <div>
                 <div>
                     <label for="">タイトル</label>
                 </div>
-                <input type="text" class="form-area">
+                <input type="text" class="form-area" name="field2">
             </div>
             <div>
                 <div>
