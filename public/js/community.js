@@ -64,7 +64,7 @@ function addLog(id, data){
     let br = document.createElement('br');
     chatImg.src = data.photo;
     chatImg.className = "chat-photo";
-    chatImg.align = "top";
+    chatImg.textAlign = "top";
     chatDiv.className = "message";
     chatName.className = "chat-name";
     chatMsg.className = "chat-msg";
