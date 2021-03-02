@@ -37,6 +37,7 @@ document.getElementById("bms_send_btn").addEventListener("click", ()=>{
     }
     // メッセージをfirestoreへ送信
     messagesRef.add({
+        // userPhotoとuserNameはcommon.jsで宣言した変数
         photo: userPhoto,
         name: userName,
         msg: msg,
@@ -50,7 +51,7 @@ document.getElementById("bms_send_btn").addEventListener("click", ()=>{
 });
 
 /**
- * ログに追加
+ * ログに追加 & 表示エリアへ追加
  */
 function addLog(id, data){
     // 追加するHTMLを作成
@@ -89,6 +90,7 @@ function addLog(id, data){
     var scrollHeight = document.getElementById("messages-area").scrollHeight;
     document.getElementById("messages-area").scrollTop = scrollHeight;
 
+    // ログを追加
     var user = firebase.auth().currentUser;
 
     if (user != null) {
