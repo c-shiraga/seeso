@@ -2,7 +2,7 @@
 // Firestoreの準備
 //---------------------------------------
 // Firestoreのインスタンス作成
-var db = firebase.firestore();
+//var db = firebase.firestore();
 
 // チャットルームのリファレンス取得
 var messagesRef = db.collection("chatroom");

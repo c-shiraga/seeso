@@ -12,6 +12,8 @@ onSignOutButtonClicked = function() {
 var userName = "";
 var userPhoto = "";
 
+var db = firebase.firestore();
+//var eventsRef = db.collection("events");
 // サインイン時に動く関数
 firebase.auth().onAuthStateChanged((user) => {
     if (user.email.match(/@oic-ok/)) {
