@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/events.css">
+    <link rel="stylesheet" href="../css/create.css">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
     
 </head>
@@ -23,7 +24,43 @@
             </ul>
         </nav>
     </header>
+    <section class="create">
+        <form onsubmit="return false" name="form1" >
+            <div>
+                <div>
+                    <label for="">日時</label>
+                </div>
+                <input type="date" id="date" class="form-area" name="field1">
+            </div>
+            <div>
+                <div>
+                    <label for="">タイトル</label>
+                </div>
+                <input type="text" id="title" class="form-area" name="field2">
+            </div>
+            <div>
+                <div>
+                    <label for="">会場</label>
+                </div>
+                <input type="radio" name="venue" value="オンライン">オンライン
+                <input type="radio" name="venue" value="オフライン">オフライン
+            </div>
+            <div>
+                <div>
+                    <label for="">内容</label>
+                </div>
+                <textarea name="content" id="content" cols="40" rows="10" class="form-area"></textarea>
+            </div>
+            <div>
+                <button id="send2">ボタン</button>
+                <input id="send" type="submit" value="作成"><input type="reset" value="リセット">
+            </div>
+        </form>
+    </section>
     <section>
+        <div id="events-area">
+            <div id="eventlog"></div>
+        </div>
         <div class="event">
             <p>No.3</p>
             <div class="date">
@@ -60,7 +97,6 @@
                 <p>参加: 4人</p>
             </div>
         </div>
-        
     </section>
     <footer>
         <nav class="ft">
@@ -82,9 +118,10 @@
 
     <script src="../config/config.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
     <script src="../js/common.js"></script>
-    
+    <script src="../js/events.js"></script>
 </body>
 </html>
