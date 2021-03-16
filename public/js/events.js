@@ -65,7 +65,7 @@ function addLog(id, data){
     date.textContent = `${data.date}`;
     venue.textContent = "会場:";
     OnorOff.textContent = `${data.venue}`;
-    creater.textContent = `${data.name}`;
+    creater.textContent = `作成者: ${data.name}`;
     followbutton.textContent = "参加ボタン";
     eventTitle.textContent = `${data.title}`;
     eventSummary.textContent = "詳細";
