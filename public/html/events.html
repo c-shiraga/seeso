@@ -18,13 +18,14 @@
         <nav class="hd">
             <ul class="hd">
                 <li class="current"><a href="./events.html">Events</a></li>
-                <li><a href="./create.html">Create</a></li>
                 <li><a href="./community.html">Community</a></li>
                 <li><a href="./my-page.html">MyPage</a></li>
             </ul>
         </nav>
     </header>
     <section class="create">
+        <details>
+            <summary>イベントを作成</summary>
         <form onsubmit="return false" name="form1" >
             <div>
                 <div>
@@ -47,6 +48,12 @@
             </div>
             <div>
                 <div>
+                <label for="">URL</label>
+                </div>
+                <input type="text" id="url" class="form-area" width="500">
+            </div>
+            <div>
+                <div>
                     <label for="">内容</label>
                 </div>
                 <textarea name="content" id="content" cols="40" rows="10" class="form-area"></textarea>
@@ -56,53 +63,17 @@
                 <input id="send" type="submit" value="作成"><input type="reset" value="リセット">
             </div>
         </form>
+    </details>
     </section>
     <section>
         <div id="events-area">
             <div id="eventlog"></div>
-        </div>
-        <div class="event">
-            <p>No.3</p>
-            <div class="date">
-                <p>日時: 2021/04/10</p>
-                <p>会場: <span class="online">オンライン</span></p>
-            </div>
-            <h2>スマブラ大会</h2>
-            <div>
-                <p>作成者</p>
-                <p>参加: 5人</p>
-            </div>
-        </div>
-        <div class="event">
-            <p>No.2</p>
-            <div class="date">
-                <p>日時: 2021/04/10</p>
-                <p>会場: <span class="offline">オフライン</span></p>
-            </div>
-            <h2>バーベキュー</h2>
-            <div>
-                <p>作成者</p>
-                <p>参加: 10人</p>
-            </div>
-        </div>
-        <div class="event">
-            <p>No.1</p>
-            <div class="date">
-                <p>日時: 2021/04/10</p>
-                <p>会場: <span class="online">オンライン</span></p>
-            </div>
-            <h2>麻雀大会</h2>
-            <div>
-                <p>作成者</p>
-                <p>参加: 4人</p>
-            </div>
         </div>
     </section>
     <footer>
         <nav class="ft">
             <ul class="ft">
                 <li class="ft"><a href="">Events</a></li>
-                <li class="ft"><a href="">Create</a></li>
                 <li class="ft"><a href="">Community</a></li>
                 <li class="ft"><a href="">MyPage</a></li> 
             </ul>
