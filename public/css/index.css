@@ -52,6 +52,9 @@ button#sign-out{
     border-radius: 5px;
     
 }
+button#sign-out:hover{
+    background-color: #008DBD;
+}
 
 
 

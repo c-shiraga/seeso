@@ -19,51 +19,51 @@
             <ul class="hd">
                 <li class="current"><a href="./events.html">Events</a></li>
                 <li><a href="./community.html">Community</a></li>
-                <li><a href="./my-page.html">MyPage</a></li>
             </ul>
         </nav>
     </header>
     <section class="create">
         <details>
-            <summary>イベントを作成</summary>
-        <form onsubmit="return false" name="form1" >
-            <div>
-                <div>
-                    <label for="">日時</label>
-                </div>
-                <input type="date" id="date" class="form-area" name="field1">
+            <summary class="event">イベントを作成する</summary>
+            <div class="event-form">
+                <form onsubmit="return false" name="form1" >
+                    <div>
+                        <div>
+                            <label for="">日時</label>
+                        </div>
+                        <input type="date" id="date" class="form-area" name="field1">
+                    </div>
+                    <div>
+                        <div>
+                            <label for="">タイトル</label>
+                        </div>
+                        <input type="text" id="title" class="form-area" name="field2">
+                    </div>
+                    <div>
+                        <div>
+                            <label for="">会場</label>
+                        </div>
+                        <input type="radio" name="venue" value="オンライン">オンライン
+                        <input type="radio" name="venue" value="オフライン">オフライン
+                    </div>
+                    <div>
+                        <div>
+                        <label for="">URL</label>
+                        </div>
+                        <input type="text" id="url" class="form-area" width="500">
+                    </div>
+                    <div>
+                        <div>
+                            <label for="">内容</label>
+                        </div>
+                        <textarea name="content" id="content" cols="40" rows="10" class="form-area"></textarea>
+                    </div>
+                    <div>
+                        <button id="send2">作成</button>
+                    </div>
+                </form>
             </div>
-            <div>
-                <div>
-                    <label for="">タイトル</label>
-                </div>
-                <input type="text" id="title" class="form-area" name="field2">
-            </div>
-            <div>
-                <div>
-                    <label for="">会場</label>
-                </div>
-                <input type="radio" name="venue" value="オンライン">オンライン
-                <input type="radio" name="venue" value="オフライン">オフライン
-            </div>
-            <div>
-                <div>
-                <label for="">URL</label>
-                </div>
-                <input type="text" id="url" class="form-area" width="500">
-            </div>
-            <div>
-                <div>
-                    <label for="">内容</label>
-                </div>
-                <textarea name="content" id="content" cols="40" rows="10" class="form-area"></textarea>
-            </div>
-            <div>
-                <button id="send2">作成</button>
-                <input type="reset" value="リセット">
-            </div>
-        </form>
-    </details>
+        </details>
     </section>
     <section>
         <div id="events-area">
@@ -73,9 +73,8 @@
     <footer>
         <nav class="ft">
             <ul class="ft">
-                <li class="ft"><a href="">Events</a></li>
-                <li class="ft"><a href="">Community</a></li>
-                <li class="ft"><a href="">MyPage</a></li> 
+                <li class="ft"><a href="./events.html">Events</a></li>
+                <li class="ft"><a href="./community.html">Community</a></li>
             </ul>
         </nav>
         <div class="copy">&copy;2021 seeso</div>

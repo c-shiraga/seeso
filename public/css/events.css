@@ -4,9 +4,24 @@ div.event{
     margin:  5px auto;
     position: relative;
     border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+}
+div.event a{
+    text-decoration: none;
+    background-color: #65C7F7;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+div.event a:hover{
+    background-color: #008DBD;
+}
+div.event summary{
+    margin-top: 15px;
 }
 div.event:hover{
-    background: rgb(247, 250, 252);
+    background: #f8f8f8;
     box-shadow: 1px 1px 1px #3CB5E0;
     bottom:6px;
     right: 6px;
@@ -31,3 +46,41 @@ p{
     color: white;
     padding: 2px;
 }
+/*************************アコーディオンのデザイン *************************/
+summary{
+    cursor: pointer;
+    outline: none;
+}
+/* Chrome、Safari以外 */
+summary.event{
+    display: block;
+    background-color: #65C7F7;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    margin: auto;
+    padding: 10px 0;
+}
+summary.event:hover{
+    background-color: #008DBD;
+}
+  
+  /* Chrome、Safari */
+summary::-webkit-details-marker.event{
+    display: none;
+}
+/* オープン時にアニメーションを設定 */
+details[open] .event-form {
+    animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* 透明 */
+        transform: translateY(-10px); /* 上から表示 */
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+  

@@ -62,11 +62,16 @@ function addLog(id, data){
     eventDiv.className = "event";
     eventDateDiv.className = "date";
     OnorOff.className = "type";
-    date.textContent = `${data.date}`;
+    date.textContent = `日時: ${data.date}`;
     venue.textContent = "会場:";
     OnorOff.textContent = `${data.venue}`;
+    if(data.venue === "オンライン"){
+        OnorOff.className = "online";
+    }else{
+        OnorOff.className = "offline";
+    }
     creater.textContent = `作成者: ${data.name}`;
-    followbutton.textContent = "参加ボタン";
+    followbutton.textContent = "参加";
     eventTitle.textContent = `${data.title}`;
     eventSummary.textContent = "詳細";
     eventContent.textContent = `${data.content}`;
