@@ -19,10 +19,11 @@
             <ul class="hd">
                 <li class="current"><a href="./events.html">Events</a></li>
                 <li><a href="./community.html">Community</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section class="create">
+    <section class="create" class="main-section">
         <details>
             <summary class="event">イベントを作成する</summary>
             <div class="event-form">
@@ -48,15 +49,19 @@
                     </div>
                     <div>
                         <div>
-                        <label for="">URL</label>
+                        <label for="">URL</label><br>
+                        <p class="url">
+                            ※LINEのオープンチャットなど、既に作成しているコミュニケーションツールのURLを貼って下さい
+                        </p>
                         </div>
-                        <input type="text" id="url" class="form-area" width="500">
+                        <input type="text" id="url" class="form-area">
                     </div>
                     <div>
                         <div>
                             <label for="">内容</label>
                         </div>
-                        <textarea name="content" id="content" cols="40" rows="10" class="form-area"></textarea>
+                        <textarea name="content" id="content" class="form-area" cols="40" rows="10"></textarea>
+                        
                     </div>
                     <div>
                         <button id="send2">作成</button>
@@ -65,7 +70,7 @@
             </div>
         </details>
     </section>
-    <section>
+    <section class="main-section">
         <div id="events-area">
             <div id="eventlog"></div>
         </div>
@@ -75,6 +80,7 @@
             <ul class="ft">
                 <li class="ft"><a href="./events.html">Events</a></li>
                 <li class="ft"><a href="./community.html">Community</a></li>
+                <li class="ft"><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="copy">&copy;2021 seeso</div>

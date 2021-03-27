@@ -22,14 +22,14 @@ body{
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
-section{
+section.main-section{
     margin: 0 100px;
     max-width: 1000px;
     margin: auto;
-    
-    
+    margin-bottom: 50px;
 }
-body.index{
+
+div.index{
     text-align: center;
 }
 .edit{
@@ -39,8 +39,14 @@ body.index{
     display: flex;
     justify-content: space-around;
 }
-.main h1{
+.main-title{
     margin-top: 250px;
+    text-align: center;
+}
+
+.main2{
+    background-color: white;
+    padding-bottom: 50px;
 }
 button#sign-out{
     position: absolute;
@@ -98,7 +104,7 @@ footer{
     background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     padding-top: 20px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 nav.ft li{
     list-style: none;
@@ -120,4 +126,43 @@ nav.ft a:hover{
 nav.ft{
     margin-left: 20px;
 }
+/*****************TOPページ**********************/
+h2.top{
+    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 3.0rem;
+    text-align: center;
+}
+h3.step-title-left{
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+    
+}
+h3.step-title-right{
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+    
+}
+.step-area{
+    /* margin: 0 100px; */
+}
+.step-right{
+    text-align: right;
+    padding: 50px 100px;
+    
+    
+}
+.step-left{
+    /* margin: 200px 0; */
+    background-color: #f0f0f0;
+    padding: 200px 100px;
+    clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+    
+}
+video{
+    width: 60%;
+    height: 60%;
+}
+
 

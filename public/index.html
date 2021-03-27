@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEESO</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
-    <title>SEESO</title>
+    
 </head>
-<body class="index">
+<body>
     <div class="main">
         <img src="img/char.png" alt="">
         <div class="main-title">
@@ -17,6 +19,31 @@
             <div id="loader">Loading...</div>
         </div>
     </div>
+    <div class="main2">
+        <h2 class="top">SEESOで<br>イベントを企画しよう</h2>
+        <div class="step-area">
+            <div class="step-left">
+                <h3 class="step-title-left">イベントを作成しよう</h3>
+                <video id="movie1" src="./mov/event_create.mov" loop autoplay muted></video>
+            </div>
+            <div class="step-right">
+                <h3 class="step-title-right">フォームに入力しよう</h3>
+                <video id="movie2" src="./mov/event_form.mov" loop autoplay muted></video>
+            </div>
+            <div class="step-left">
+                <h3 class="step-title-left">チャットで共有しよう</h3>
+                <video id="movie3" src="./mov/chat.mov" loop autoplay muted></video>
+            </div>
+            <div class="step-right">
+                <h3 class="step-title-right">イベントに参加しよう</h3>
+                <video id="movie4" src="./mov/participation.mov" loop autoplay muted></video>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="copy">&copy;2021 seeso</div>
+    </footer>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
 
@@ -67,5 +94,6 @@
         // The start method will wait until the DOM is loaded.
         ui.start('#firebaseui-auth-container', uiConfig);
     </script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

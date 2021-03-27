@@ -2,20 +2,21 @@
     border: 1px gray solid;
     border-radius: 5px;
     padding: 10px;
-    
+    width: 700px;
+    margin-bottom: 20px;
 }
 .create{
     text-align: center;
 }
-textarea{
-    margin-left: 50px;
-}
-label{
-    margin-right: 300px;
-}
+
 div{
     margin-top: 20px;
 }
+p.url{
+    font-size: 0.75rem;
+    color: gray;
+}
+
 /*************************イベントフォームのデザイン *************************/
 .event-form{
     background-color: white;

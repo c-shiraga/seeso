@@ -27,6 +27,9 @@ div.event:hover{
     right: 6px;
 
 }
+div.text{
+    text-align: center;
+}
 .date{
     display: flex;
     justify-content: space-between;
@@ -37,6 +40,7 @@ h2{
 p{
     margin: 5px;
 }
+
 .online{
     background-color: skyblue;
     padding: 2px;
