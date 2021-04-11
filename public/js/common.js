@@ -1,8 +1,9 @@
 // サインアウト時に動く関数
 onSignOutButtonClicked = function() {
     firebase.auth().signOut().then(function() {
-        location.href = '../index.html';
         alert("サインアウトしました。");
+        location.href = '../index.html';
+        
     })
     .catch(function(error) {
         alert(`サインアウトできませんでした。${error}`);
@@ -30,8 +31,8 @@ firebase.auth().onAuthStateChanged((user) => {
     } else {
         // サインインしていない状態
         // サインイン画面に遷移する等
-        alert("OICアカウントでサインインしてください。")
-        location.href = '../index.html';
+        // alert("OICアカウントでサインインしてください。")
+        location.href = '../html/error.html';
     }
 });
 

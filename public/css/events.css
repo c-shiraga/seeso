@@ -27,6 +27,10 @@ div.event:hover{
     right: 6px;
 
 }
+.event-content{
+    /* 改行を入れる */
+    white-space: pre-wrap;
+}
 div.text{
     text-align: center;
 }
@@ -77,6 +81,7 @@ summary::-webkit-details-marker.event{
 details[open] .event-form {
     animation: fadeIn 0.5s ease;
 }
+
 @keyframes fadeIn {
     0% {
         opacity: 0; /* 透明 */

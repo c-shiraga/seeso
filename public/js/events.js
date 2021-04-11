@@ -76,6 +76,7 @@ function addLog(id, data){
     eventSummary.textContent = "詳細";
     eventContent.textContent = `${data.content}`;
     eventDiv.id = id;
+    eventContent.className = "event-content"
     eventDateDiv.appendChild(date);
     venue.appendChild(OnorOff);
     eventDateDiv.appendChild(venue);

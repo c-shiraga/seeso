@@ -1,0 +1,36 @@
+body{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: #EDF2FA;
+}
+.sign-in-error{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.error-message-area{
+    margin-top: 150px;
+}
+
+h2{
+    font-size: 3rem;
+}
+p{
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+    background-color: #65C7F7;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px 35px;
+    
+}
+a:hover{
+    background-color: #008DBD;
+}
+.return-top{
+    text-align: center;
+    margin-top: 20px;
+}
