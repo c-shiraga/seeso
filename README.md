@@ -1,4 +1,4 @@
-![seeso](https://user-images.githubusercontent.com/72398075/111425906-28a84700-8737-11eb-8be7-6976d0098700.png)
+![SEESO](https://user-images.githubusercontent.com/72398075/114747049-61196000-9d8b-11eb-9fad-fdbc47220067.png)
 # SEESO
 
 ## 説明
