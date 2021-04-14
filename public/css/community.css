@@ -1,10 +1,11 @@
 #messages-area{
-    width: 1000px;
+    max-width: 1000px;
     overflow-y: scroll;
     height: 550px;
     padding-bottom: 20px;
     background-color: white;
     border-radius: 10px;
+    margin: 0 10px;
 }
 
 
@@ -16,8 +17,8 @@
     border-bottom: 1px solid #ddd;
     height: 55px;
     padding: 4px;
-    margin-top: 10px;
-    width: 1000px;
+    margin: 10px 10px 0;
+    max-width: 1000px;
     border-radius: 10px;
 }
 #bms_send_message{
@@ -25,12 +26,16 @@
     line-height: 16px;
     height: 48px;
     padding: 14px 6px 0px 6px;/*文字がテキストエリアの中心になる様に隙間調整*/
-    border: 1px solid #ccc;
+    border: #aaa 2px solid;
     border-radius: 4px;/*角丸*/
     text-align: left;/*文字を左寄せ*/
     box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2) inset;/*内側に影を入れてテキストエリアらしくした*/
     box-sizing: border-box;/*paddingとborderの要素の高さと幅の影響をなくす（要素に高さと幅を含める）*/
-
+    outline: none;
+}
+#bms_send_message:focus{
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
 }
 #bms_send_btn {
     width: 72px;
@@ -49,6 +54,7 @@
 #bms_send_btn:hover {
     background: #13178E; /*マウスポインタを当てた時にアクティブな色になる*/
     cursor: pointer;/*マウスポインタを当てた時に、カーソルが指の形になる*/
+    transition: .3s;
 }
 
 
@@ -79,5 +85,7 @@ div.message{
     font-size: 8pt;
     color: #bbb;
     margin-left: 5px;
+    min-width: 100px;
 }
+
     

@@ -2,8 +2,8 @@
 onSignOutButtonClicked = function() {
     firebase.auth().signOut().then(function() {
         alert("サインアウトしました。");
-        location.href = '../index.html';
         
+        location.href = '../index.html';
     })
     .catch(function(error) {
         alert(`サインアウトできませんでした。${error}`);
@@ -28,10 +28,11 @@ firebase.auth().onAuthStateChanged((user) => {
         // サインしているユーザーの名前と画像を取得
         userName = user.displayName;
         userPhoto = user.photoURL;
+
+        
     } else {
         // サインインしていない状態
         // サインイン画面に遷移する等
-        // alert("OICアカウントでサインインしてください。")
         location.href = '../html/error.html';
     }
 });

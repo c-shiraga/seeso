@@ -1,9 +1,9 @@
 div.event{
-    border: 1px #BFC5CA solid;
+    /* border: 1px #BFC5CA solid; */
     max-width: 800px;
-    margin:  5px auto;
+    margin:  10px auto;
     position: relative;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: white;
     padding: 10px;
 }
@@ -16,15 +16,17 @@ div.event a{
 }
 div.event a:hover{
     background-color: #008DBD;
+    transition: .3s;
 }
 div.event summary{
     margin-top: 15px;
 }
 div.event:hover{
-    background: #f8f8f8;
-    box-shadow: 1px 1px 1px #3CB5E0;
+    background: #e8e8e8;
+    transition: .3s;
+    /* box-shadow: 1px 1px 1px #3CB5E0;
     bottom:6px;
-    right: 6px;
+    right: 6px; */
 
 }
 .event-content{
@@ -71,6 +73,7 @@ summary.event{
 }
 summary.event:hover{
     background-color: #008DBD;
+    transition: .3s;
 }
   
   /* Chrome、Safari */

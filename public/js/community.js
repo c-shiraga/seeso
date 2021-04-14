@@ -72,8 +72,8 @@ function addLog(id, data){
     chatMsgBox.className = "chat-msg-box";
     chatTime.className = "chat-time";
     chatName.textContent = `${data.name}`;
-    chatMsg.textContent = `${data.msg}`
-    chatTime.textContent = `(${getStrTime(data.date)})`
+    chatMsg.textContent = `${data.msg}`;
+    chatTime.textContent = `(${getStrTime(data.date)})`;
     chatDiv.id = id;
     chatDiv.appendChild(chatImg);
     chatDataDiv.appendChild(chatName);

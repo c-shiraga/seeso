@@ -59,6 +59,8 @@ function addLog(id, data){
     let eventContent = document.createElement('p');
     let followbutton = document.createElement('a');
     followbutton.href=`${data.url}`;
+    followbutton.setAttribute('target', '_blank');
+    followbutton.setAttribute('rel', 'noopener nofollow');
     eventDiv.className = "event";
     eventDateDiv.className = "date";
     OnorOff.className = "type";
@@ -76,7 +78,7 @@ function addLog(id, data){
     eventSummary.textContent = "詳細";
     eventContent.textContent = `${data.content}`;
     eventDiv.id = id;
-    eventContent.className = "event-content"
+    eventContent.className = "event-content";
     eventDateDiv.appendChild(date);
     venue.appendChild(OnorOff);
     eventDateDiv.appendChild(venue);

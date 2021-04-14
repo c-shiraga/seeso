@@ -1,6 +1,6 @@
 body{
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    background-color: #EDF2FA;
+    background-color: #e2eff7;
 }
 .sign-in-error{
     display: flex;
@@ -24,11 +24,12 @@ a{
     color: white;
     border-radius: 5px;
     width: 200px;
-    padding: 10px 35px;
+    padding: 15px 45px;
     
 }
 a:hover{
     background-color: #008DBD;
+    transition: .3s;
 }
 .return-top{
     text-align: center;
