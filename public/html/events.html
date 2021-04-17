@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/events.css">
-    <link rel="stylesheet" href="../css/create.css">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
     
 </head>
@@ -28,35 +27,35 @@
             <summary class="event">イベントを作成する</summary>
             <div class="event-form">
                 <form onsubmit="return false" name="form1" >
-                    <div>
+                    <div class="form-content">
                         <div>
                             <label for="">日時</label>
                         </div>
                         <input type="date" id="date" class="form-area" name="field1">
                     </div>
-                    <div>
+                    <div class="form-content">
                         <div>
                             <label for="">タイトル</label>
                         </div>
                         <input type="text" id="title" class="form-area" name="field2">
                     </div>
-                    <div>
+                    <div class="form-content">
                         <div>
                             <label for="">会場</label>
                         </div>
                         <input type="radio" name="venue" value="オンライン">オンライン
                         <input type="radio" name="venue" value="オフライン">オフライン
                     </div>
-                    <div>
+                    <div class="form-content">
                         <div>
                         <label for="">URL</label><br>
                         <p class="url">
                             ※既に作成している、LINEオープンチャットのURLを貼って下さい
                         </p>
                         </div>
-                        <input type="text" id="url" class="form-area" value="https://line.me/ti/g2/">
+                        <input type="text" id="url" class="form-area" value="https://line.me/">
                     </div>
-                    <div>
+                    <div class="form-content">
                         <div>
                             <label for="">内容</label>
                         </div>
@@ -75,6 +74,13 @@
             <div id="eventlog"></div>
         </div>
     </section>
+    <div class="smf-nav">
+        <div class="smf-nav-list">
+            <div><a href="./events.html"><img src="../img/calender_icon.png" alt=""></a></div>
+            <div><a href="./community.html"><img src="../img/chat_icon.png" alt=""></a></div>
+            <div><a href="./contact.html"><img src="../img/mail_icon.png" alt=""></a></div>
+        </div>
+    </div>
     <footer>
         <nav class="ft">
             <ul class="ft">

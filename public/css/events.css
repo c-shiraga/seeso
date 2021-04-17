@@ -1,3 +1,49 @@
+.form-area{
+    border: #aaa 2px solid;
+    border-radius: 5px;
+    padding: 10px;
+    width: 700px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.form-area:focus{
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+}
+.create{
+    text-align: center;
+}
+
+div.form-content{
+    margin-top: 20px;
+}
+p.url{
+    font-size: 0.75rem;
+    color: gray;
+}
+
+/*************************イベントフォームのデザイン *************************/
+.event-form{
+    background-color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin: 40px 0;
+}
+#send2{
+    background-color: #65C7F7;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    margin: auto;
+    padding: 10px 0;
+}
+#send2:hover{
+    background-color: #008DBD;
+    transition: .3s;
+}
+
+/*************************イベント一覧のデザイン *************************/
+
 div.event{
     /* border: 1px #BFC5CA solid; */
     max-width: 800px;
@@ -41,7 +87,7 @@ div.text{
     justify-content: space-between;
 }
 h2{
-    margin: 10px 0;
+    margin: 15px 0 25px;
 }
 p{
     margin: 5px;
@@ -93,6 +139,24 @@ details[open] .event-form {
     100% {
         opacity: 1;
         transform: none;
+    }
+}
+/*************************スマホのデザイン *************************/
+@media(max-width:700px){
+    .form-area{
+        width: 320px;
+    }
+    .event-form{
+        margin: 10px 5px 0;
+    }
+    #events-area{
+        margin: 0 5px;
+    }
+    footer{
+        margin-bottom: 50px;
+    }
+    p.url{
+        font-size: 0.5rem;
     }
 }
   
