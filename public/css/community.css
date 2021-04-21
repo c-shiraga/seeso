@@ -98,6 +98,12 @@ div.message{
     footer{
         margin-bottom: 50px;
     }
+    nav.ft{
+        display: none;
+    }
+    #bms_send_btn {
+        background-color: #13178E;
+    }
 }
 
     

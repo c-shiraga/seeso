@@ -1,5 +1,7 @@
 var eventsRef = db.collection("events");
 
+
+
 /*同期処理
 **/
 //var eventsRef = db.collection("events");
@@ -26,24 +28,34 @@ eventsRef.orderBy("date", "asc").onSnapshot( (snapshot) => {
     let venue = document.form1.venue.value;
     let content = document.getElementById("content").value;
     let url = document.getElementById("url").value;
+    url = url.replace(/オ.+」/,"");
     // 作成イベントをfirestoreへ送信
     if(date != "" && title != "" && venue!="" && content!="" && url!=""){
-    eventsRef.add({
-        // 右はcreate.htmlの入力内容
-        name: userName,
-        date: date,
-        title: title,
-        venue: venue,
-        content: content,
-        url: url
-    })
-    .then(()=>{
-        document.form1.reset();
-    })
-}else{
-    alert("未入力の項目があります。")
-}
+        if(/line\.me/.test(url)){
+            //テキスト内のURLにaタグをつける。
+            
+            eventsRef.add({
+                // 右はcreate.htmlの入力内容
+                name: userName,
+                date: date,
+                title: title,
+                venue: venue,
+                content: content,
+                url: url
+            })
+            .then(()=>{
+                document.form1.reset();
+            })
+            alert("イベントを作成しました。")
+        }else{
+            alert("URLには、LINEのオープンチャットのリンクを貼ってください。")
+        }   
+    }else{
+        alert("未入力の項目があります。")
+    }
 });
+
+
 function addLog(id, data){
     // 追加するHTMLを作成
     let eventDiv  = document.createElement('div');
@@ -76,6 +88,8 @@ function addLog(id, data){
     followbutton.textContent = "参加";
     eventTitle.textContent = `${data.title}`;
     eventSummary.textContent = "詳細";
+
+    
     eventContent.textContent = `${data.content}`;
     eventDiv.id = id;
     eventContent.className = "event-content";

@@ -10,4 +10,7 @@
     footer{
         margin-bottom: 50px;
     }
+    nav.ft{
+        display: none;
+    }
 }

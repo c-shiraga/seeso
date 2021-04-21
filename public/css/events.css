@@ -158,5 +158,8 @@ details[open] .event-form {
     p.url{
         font-size: 0.5rem;
     }
+    nav.ft{
+        display: none;
+    }
 }
   
